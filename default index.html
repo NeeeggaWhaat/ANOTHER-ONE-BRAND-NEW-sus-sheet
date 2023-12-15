@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang='ru'>
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Пустая страница</title>
+    <h1>Меню</h1>
+    <button style="height:50px" class="scale">Главная</button>
+    <button style="height:50px" class="scale">Вторая</button>
+    <button style="height:50px" class="scale">Третья</button>
+    <button style="height:50px" class="scale">Четвертая</button>
 </head>
 <style>
-/* Стили пиши здесь :) */
+    .scale {
+    transition: 1s; 
+   }
+   .scale:hover {
+    transform: scale(1.2);
+    background-color:#FF0062; 
+   }
+   .scale2 {
+    transition: 1s; 
+   }
+   .scale2:hover {
+    transform: scale(1.2);
+    background-color:black; 
+    color:white;
+   }
+    
+
 
 </style>
 <body>
+    <h1>Форма авторизации</h1>
+    <div style="width: 300px; height: 100px; border:1px solid; padding: 25px; background-color:#FF0062;">
+          <div>
+            <label style="font-size:20px;"  for="name">Ваш логин:</label>
+            <input style="margin:9px" type="text" name="name" required>
+          </div>
+            <p></p>
+              <div>
+                <label style="font-size:20px;" for="name">Ваш пароль:</label>
+                <input type="text" name="name" required>
+              </div>
+              <button style="margin: 20px; width: 250px " class="scale2">Авторизоваться</button>
+    </div>          
+
+    
 
 </body>
 <script>
