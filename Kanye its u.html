@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list_ol li{
+            border:1px solid
+        }
+        .list_ol span{
+            background-color: #FF0062;
+        }
+        .list_ol li:first-child {
+            background-color: #ff0062;
+        }
+        .list_ol li:nth-child(4) {
+            background-color: #FF0062;
+        }
+        .list_ol li:nth-child(3) span {
+            color:#FF0062
+        }
+        .list_ol li:nth-child(1) span~span{
+            color: #FF0062;
+        }
+        .list_ol li:nth-child(even) {
+            background-color: #FF0062;
+        }
+        .list_ol li:nth-child(odd) {
+            background-color: black;
+            color:beige;
+        }
+        .img_text {
+            width:700px;
+            height:300px;
+            border:3px solid black;
+            position: relative;
+        }
+        
+        .img_text img {
+            width:100%;
+            height:100%;
+            transition: all 1s;
+             
+        }     
+        .img_text span {
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            background-color: rgba(255,255,255,0.5);
+            width:100%;
+            display: inline-block;
+            text-align: center;
+            height: 40px;
+            
+        }
+        
+        .img_text img:hover {
+            transform: scale(1.5);
+            transition: all 1s;
+        }
+
+
+    
+        .img {
+            width:500px;
+            height:600px;
+            border:3px solid black;
+            position: relative;
+        }
+        
+        .img img {
+            width:100%;
+            height:100%;
+            transition: all 1s;
+            
+        }     
+        .img span {
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            background-color: rgba(255,255,255,0.5);
+            width:100%;
+            display: inline-block;
+            text-align: center;
+            height: 40px;
+        }
+
+        .img img:hover {
+            transform: scale(1.5);
+            transition: all 1s;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="img_text">
+        <img src="https://avatars.mds.yandex.net/i?id=5240cb9079f90b4899a73a852effd66ac6eb9932-10642623-images-thumbs&n=13">
+        <span style="border:1px;">КАНИЕ</span>
+    </div>
+    <div class="img">
+        <img  src="https://avatars.mds.yandex.net/i?id=5554a5b446a5c3bafe5eb2ce31ead910370d3ade-10310451-images-thumbs&n=13">
+        <span style="border:1px;">ANOTHER ONE HIGH КАНИЕ</span>
+    </div>
+
+
+
+
+
+    <ol class="list_ol">
+        <li>Первый <span>Текст</span><span> NEGGA</span></li>
+        <li>Второй <span>Текст</span></li>
+        <li>Третий <span>Текст</span></li>
+        <li>Четыре <span>Текст</span></li>
+        <li>Пятый <span>Текст</span></li>
+    </ol>
+</body>
+</html>
